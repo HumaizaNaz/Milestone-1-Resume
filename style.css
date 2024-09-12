@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffe4e4, #f9d1ff);
+  color: #21281d;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #d15eea;
+  text-shadow: 2px 0px 1px rgb(105, 5, 116);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 10px 20px rgba(134, 5, 125, 0.565);
+}
+
+fieldset {
+  border-radius: 12px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-weight: bold;
+  color: #832498;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 1px 0px 1px rgb(163, 29, 178);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #21281d;
+}
+
+input,
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #d1c1d1;
+  box-shadow: 0px 2px 2px rgba(134, 5, 125, 0.565);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff84ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background-color: #832498;
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px rgba(134, 5, 125, 0.565);
+}
+
+.profilePicture {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid; /* Border color will be set dynamically */
+  box-shadow: 2px 3px 15px; 
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
